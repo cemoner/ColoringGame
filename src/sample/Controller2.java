@@ -57,7 +57,7 @@ public class Controller2 implements Initializable {
     }
 
     public void game(){
-        if(("-fx-background-color: " + textField.getText()).equals(pane.getStyle()) && counter <= 9){
+        if(("-fx-background-color: " + textField.getText()).equalsIgnoreCase(pane.getStyle()) && counter <= 9){
             trueCounter += 1;
             pointLabel.setText("Points: " + trueCounter);
         }
